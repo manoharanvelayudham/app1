@@ -1,0 +1,33 @@
+{
+  "system": {
+    "health_check_interval_minutes": 5,
+    "max_log_retention_days": 30,
+    "alert_email_enabled": false,
+    "maintenance_window_start": "02:00",
+    "maintenance_window_duration_hours": 2,
+    "backup_retention_days": 7,
+    "max_concurrent_users": 1000,
+    "session_timeout_minutes": 60,
+    "api_rate_limit_per_minute": 1000
+  },
+  "analytics": {
+    "batch_size": 1000,
+    "prediction_cache_hours": 24,
+    "ml_model_retrain_days": 7,
+    "competency_calculation_schedule": "0 2 * * *",
+    "report_generation_max_records": 50000
+  },
+  "security": {
+    "password_min_length": 8,
+    "password_require_special_chars": true,
+    "max_login_attempts": 5,
+    "lockout_duration_minutes": 15,
+    "jwt_expiration_hours": 24
+  },
+  "performance": {
+    "database_pool_size": 20,
+    "cache_expiration_minutes": 15,
+    "max_file_upload_mb": 100,
+    "request_timeout_seconds": 30
+  }
+}
